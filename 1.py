@@ -56,8 +56,6 @@ def getImg(html,id):
 
 
 
-#url = "http://image.baidu.com/search/index?tn=baiduimage&ipn=r&ct=201326592&cl=2&lm=-1&st=-1&fm=result&fr=&sf=1&fmq=1536467905441_R&pv=&ic=0&nc=1&z=&se=1&showtab=0&fb=0&width=&height=&face=0&istype=2&ie=utf-8&word=%E8%8B%8D%E4%BA%95%E7%A9%BA"
-#url = 'https://image.baidu.com/search/index?ct=201326592&cl=2&st=-1&lm=-1&nc=1&ie=utf-8&tn=baiduimage&ipn=r&rps=1&pv=&fm=rs5&word=%E5%88%98%E4%BA%A6%E8%8F%B2%E5%A3%81%E7%BA%B8%E9%AB%98%E6%B8%85%E5%A4%A7%E5%9B%BE&oriquery=%E5%88%98%E4%BA%A6%E8%8F%B2%E5%8D%8A%E8%A3%B8%E5%A3%81%E7%BA%B8&ofr=%E5%88%98%E4%BA%A6%E8%8F%B2%E5%8D%8A%E8%A3%B8%E5%A3%81%E7%BA%B8&sensitive=0'
 url = "http://www.ivsky.com/bizhi/bing_t2824/"
 h = getHtml(url)
 l= getHtmlList(h)
