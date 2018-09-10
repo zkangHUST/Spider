@@ -21,19 +21,21 @@ def getList(src):
     return l1
 
 def getArticle(src):
-    id = 0
+
     for val in src:
         html = getHtml(val)
+        id = str(re.findall(r'details/([0-9]*)',val)[0])
+
+        print(id)
         #reg = re.compile(r'/article/details/')
         texts = html.find_all('div',class_='markdown_views')
         texts = re.sub(r'<.*?>',' ',str(texts))
         texts = re.sub(r'\n','\n',str(texts))
-        filename=str(id)+'.txt'
+        filename='.\data\CsdnBlog\'+id+'.txt'
         t = str(texts)
         #print(t)
         with open(filename,'w') as f:
             f.write(t)
-        id += 1
     return 0
 
 url = "https://blog.csdn.net/ww1473345713"
